@@ -1,0 +1,6 @@
+.login__bg {
+    background: url('../../Images/pexels.jpg');
+    height: 750px;
+    background-size: cover;
+    background-attachment: fixed;
+}

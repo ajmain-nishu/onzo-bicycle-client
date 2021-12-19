@@ -1,0 +1,9 @@
+.review__photo {
+    width: 70px;
+    border-radius: 50%;
+    border: 5px solid rgba(0, 0, 0, 0.616);
+}
+
+.review__photo__img{
+    border-radius: 50%;
+}

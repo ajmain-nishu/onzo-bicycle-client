@@ -1,0 +1,32 @@
+/* button */
+.homeservice__btn {
+    border-bottom: 1px dotted black;
+    color: black;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 8px 20px;
+    font-style: italic;
+}
+
+/* button hover */
+.card__hover:hover .homeservice__btn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    opacity: 1;
+    transition: 0.5s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* rating star */
+.fas {
+    color: #FFAB00;
+}
+
+.fa-star {
+    font-size: 15px;
+}
