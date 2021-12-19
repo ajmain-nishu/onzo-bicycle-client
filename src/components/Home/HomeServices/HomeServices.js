@@ -11,7 +11,7 @@ const HomeServices = () => {
 
     // api call
     useEffect(() => {
-        fetch("http://localhost:5000/homepageProduct")
+        fetch("https://still-sands-78439.herokuapp.com/homepageProduct")
             .then((res) => res.json())
             .then((data) => setHomeServices(data));
     }, []);

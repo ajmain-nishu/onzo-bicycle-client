@@ -15,7 +15,7 @@ const Purchase = () => {
 
     //api call
     useEffect(() => {
-        fetch(`http://localhost:5000/exploreProduct`)
+        fetch(`https://still-sands-78439.herokuapp.com/exploreProduct`)
             .then(response => response.json())
             .then(data => setOrder(data))
     }, [])
@@ -33,7 +33,7 @@ const Purchase = () => {
         data.price = search.price
 
         // api call
-        axios.post('http://localhost:5000/buynow', data)
+        axios.post('https://still-sands-78439.herokuapp.com/buynow', data)
             .then(res => {
                 alert('are you sure add this ?');
                 reset();

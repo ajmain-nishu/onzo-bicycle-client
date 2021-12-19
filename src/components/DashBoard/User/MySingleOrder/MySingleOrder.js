@@ -9,7 +9,7 @@ const MySingleOrder = (props) => {
 
     //api call
     useEffect(() => {
-        fetch('http://localhost:5000/exploreProduct')
+        fetch('https://still-sands-78439.herokuapp.com/exploreProduct')
             .then(response => response.json())
             .then(data => setSingleServices(data))
     }, [cancel])
@@ -21,7 +21,7 @@ const MySingleOrder = (props) => {
     const itemDelete = id => {
         const proceed = window.confirm('Are you sure want to cancel?');
         if (proceed) {
-            const uri = `http://localhost:5000/myOrders/${id}`
+            const uri = `https://still-sands-78439.herokuapp.com/myOrders/${id}`
 
             fetch(uri, {
                 method: 'DELETE',

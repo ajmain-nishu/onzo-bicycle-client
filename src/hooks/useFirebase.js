@@ -67,7 +67,7 @@ const useFirebase = () => {
 
     // make admin
     const handleUserInfoRegister = (email) => {
-        fetch("http://localhost:5000/addUserInfo", {
+        fetch("https://still-sands-78439.herokuapp.com/addUserInfo", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ email }),

@@ -10,7 +10,7 @@ const MyOrders = () => {
 
     //api call
     useEffect(() => {
-        fetch(`http://localhost:5000/myOrders`)
+        fetch(`https://still-sands-78439.herokuapp.com/myOrders`)
         .then(res => res.json())
         .then(data => setMyOrders(data))
     }, [])

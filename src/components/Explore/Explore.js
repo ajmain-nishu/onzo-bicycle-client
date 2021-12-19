@@ -8,7 +8,7 @@ const Explore = () => {
 
     //api call
     useEffect(() => {
-        fetch("http://localhost:5000/exploreProduct")
+        fetch("https://still-sands-78439.herokuapp.com/exploreProduct")
             .then((res) => res.json())
             .then((data) => setProducts(data));
     }, []);

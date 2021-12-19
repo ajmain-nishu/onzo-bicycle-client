@@ -8,7 +8,7 @@ const Testimonial = () => {
 
     // api call
     useEffect(() => {
-        fetch("http://localhost:5000/review")
+        fetch("https://still-sands-78439.herokuapp.com/review")
             .then((res) => res.json())
             .then((data) => setReviews(data));
     }, []);

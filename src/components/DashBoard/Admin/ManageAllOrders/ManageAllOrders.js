@@ -18,7 +18,7 @@ const ManageAllOrders = () => {
     const handleUpdate = (id) => {
         const process = window.confirm('Are you want to sure update?')
         if (process) {
-            fetch(`http://localhost:5000/updateStatus/${id}`, {
+            fetch(`https://still-sands-78439.herokuapp.com/updateStatus/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),
@@ -28,7 +28,7 @@ const ManageAllOrders = () => {
 
     //api call
     useEffect(() => {
-        fetch("http://localhost:5000/myOrders")
+        fetch("https://still-sands-78439.herokuapp.com/myOrders")
             .then((res) => res.json())
             .then((data) => setAllOrders(data));
     }, []);

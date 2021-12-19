@@ -9,7 +9,7 @@ const AddProduct = () => {
     const onSubmit = data => {
 
         //server api call
-        fetch('http://localhost:5000/addProduct', {
+        fetch('https://still-sands-78439.herokuapp.com/addProduct', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

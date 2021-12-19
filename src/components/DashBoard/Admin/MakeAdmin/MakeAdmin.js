@@ -10,7 +10,7 @@ const MakeAdmin = () => {
     const onSubmit = (data) => {
         const processed = window.confirm('Are you sure ?')
         if (processed) {
-            fetch("http://localhost:5000/makeAdmin", {
+            fetch("https://still-sands-78439.herokuapp.com/makeAdmin", {
                 method: "PUT",
                 headers: { "content-type": "application/json" },
                 body: JSON.stringify(data),

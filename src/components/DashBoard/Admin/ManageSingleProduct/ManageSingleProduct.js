@@ -11,7 +11,7 @@ const ManageSingleProduct = (props) => {
     const itemDelete = id => {
         const proceed = window.confirm('Are you sure want to delete ?');
         if (proceed) {
-            const uri = `http://localhost:5000/exploreProduct/${id}`
+            const uri = `https://still-sands-78439.herokuapp.com/exploreProduct/${id}`
 
             fetch(uri, {
                 method: 'DELETE',

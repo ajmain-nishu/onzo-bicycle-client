@@ -20,7 +20,7 @@ const DashBoard = () => {
 
     // api call
     useEffect(() => {
-        fetch(`http://localhost:5000/makeAdmin/${user?.email}`)
+        fetch(`https://still-sands-78439.herokuapp.com/makeAdmin/${user?.email}`)
             .then((res) => res.json())
             .then((data) => {
                 if (data[0]?.role === "admin") {

@@ -12,7 +12,7 @@ const Review = () => {
         data.photoURL = user.photoURL;
 
         // form
-        axios.post('http://localhost:5000/addReview', data)
+        axios.post('https://still-sands-78439.herokuapp.com/addReview', data)
         .then(res => {
             alert('Are You Add This Review ?');
             reset();
